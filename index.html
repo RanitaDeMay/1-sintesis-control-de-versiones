@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>1-Síntesis</title>
+</head>
+<body>
+    <div class="contenedor">
+    <h1>SISTEMA DE CONTROL DE VERSIONES</h1>
+    <p><b>Un sistema de control de versiones</b> es un sistema que registra cambios realizados en uno o más archivos a lo largo del tiempo, con la función de
+    recuperar versiones específicas de dichos archivos.
+
+    Recuperar versiones de los archivos tiene diferentes usos, por ejemplo:
+    <ul>
+        <li>Regresar a versiones anteriores de un proyecto.</li>
+        <li>Comparar cambios a través del tiempo.</li>
+        <li>Ver quién hizo la última modificación de un proyecto.</li>
+        <li>Ver quién y cuándo introdujo un problema/error.</li>
+        <li>Recuperar fácilmente archivos pérdidos.</li>
+    </ul> 
+    </p>
+    <h2>Sistemas de control de versiones locales</h2>
+        <p>Hay método de control de versiones sumamente utilizado que consiste en crear una copia de un proyecto
+        y guardarlo en otra ruta (preferentemente) antes de comenzar a editar dicho proyecto.
+        Con la función de mantener siempre una versión anterior del proyecto intacta en caso de errores o cualquier problema.
+        Aunque resultaba muy sencillo, era propenso a errores que iban desde olvidar hacerlo hasta guardar la versión en otra ruta o con otro nombre.
+            <br>
+        Para evitarlo se desarrollaron VCS que contaban con una base de datos donde se registran todos los cambios sobre el proyecto de manera versionada.
+        Una herramienta popular que hace esto es el sistema RCS, que aún puede encontrarse en computadoras actuales, este sistema funciona guardando conjuntos parches
+        en un formato especial en disco lo que ayuda a recrear un proyecto en cualquier momento a partir de dichos parches.
+
+        </p>
+    <h2>Sistemas de control de sistemas centralizados</h2>
+        <p>Si bien usar un VCS local era muy práctico y sencillo, imposibilitan trabajar en conjunto con otros colaboradores. Para solucionar dicho impedimento surgieron los CVCS que son
+        los sistemas de control de versiones centralizados. Cuentan con un servidor donde se encuentran las versiones de un archivo, desde ese servidor, los colaboradores pueden 
+        descargar los archivos en sus máquinas.
+        Esta configuración también tiene una desventaja muy seria, que es el depender de un servidor centralizado, por lo que una falla puede ocasionar la pérdida del proyecto o suspensión del avance de trabajo durante la resolución de dicho problema.
+        </p>
+    <h2>Sistemas de control de versiones distribuidos</h2>
+        <p>Esta configuración ofrece soluciones para los problemas que sufren los CVCS. Ya que en esta configuración, al descargar
+        la última versión, también se réplica completamente el repositorio. Por lo que cada copia se convierte en un clon completo del proyecto.
+        Entonces, en caso de que el servidor falle, cualquiera de los repositorios disponibles en cualquiera de los clientes, puede ser copiado al servidor
+        con el fin de restaurarlo.
+        </p>
+        <br>
+    <h1>Conclusión</h1>
+    <p>En resumen, un sistema de control de versiones puede ser visto como un historial de versiones de un proyecto determinado, lo que nos ayuda a saber cuándo se hizo algo y lo más importante, qué se hizo en dicha versón.
+        No sabía que existía un término para referirse a esta práctica, pues es una técnica que se usa para evitar perder una versión funcional y para respaldar un proyecto. Me doy cuenta de que existen asistentes como lso VCS que están tan
+        evolucionados que se puede trabajar en equipo de manera remota sin tener que preocuparse por perder versiones ni cambios.
+    </p>
+    </div>
+</body>
+</html>
